@@ -8,7 +8,7 @@ ARCH:=riscv64
 BOARD:=litex
 BOARDNAME:=LiteX NaxRiscv SoC
 FEATURES:=ext4 squashfs
-KERNELNAME:=Image dtbs
+KERNELNAME:=Image
 SUBTARGETS:=generic
 
 KERNEL_PATCHVER:=6.9
