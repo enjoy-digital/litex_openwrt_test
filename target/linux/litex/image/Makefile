@@ -40,6 +40,8 @@ define Device/litex_arty
   DEVICE_VENDOR := LiteX
   DEVICE_MODEL := arty A35
   #DEVICE_DTS := litex/soc
+  DEVICE_PACKAGES := -ppp kmod-fs-ext4 kmod-mmc kmod-mmc-spi kmod-sdhci \
+    -kmod-nft-offload -firewall4
 endef
 TARGET_DEVICES += litex_arty
 
