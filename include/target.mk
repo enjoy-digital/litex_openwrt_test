@@ -287,7 +287,7 @@ ifeq ($(DUMP),1)
   endif
   ifeq ($(ARCH),riscv64)
     CPU_TYPE ?= riscv64
-    CPU_CFLAGS_riscv64:=-mabi=lp64d -march=rv64imafdc
+    CPU_CFLAGS_riscv64:=-mabi=lp64 -march=rv64ima
   endif
   ifeq ($(ARCH),loongarch64)
     CPU_TYPE ?= generic
