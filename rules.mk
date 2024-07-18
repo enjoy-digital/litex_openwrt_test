@@ -221,7 +221,7 @@ TARGET_PATH_PKG:=$(STAGING_DIR)/host/bin:$(STAGING_DIR_HOSTPKG)/bin:$(TARGET_PAT
 
 ifeq ($(CONFIG_SOFT_FLOAT),y)
   SOFT_FLOAT_CONFIG_OPTION:=--with-float=soft
-  ifeq ($(CONFIG_arm$(CONFIG_riscv64)),y)
+  ifeq ($(CONFIG_arm),y)
     TARGET_CFLAGS+= -mfloat-abi=soft
   else
     TARGET_CFLAGS+= -msoft-float
